@@ -1,90 +1,103 @@
-/* Reset */
-* {
-    box-sizing: border-box;
-    font-family: inherit;
-    font-size: inherit;
-    color: inherit;
-    text-decoration: none;
-    list-style: none;
-}
-
-/* Default Styles */
-
-html {
-    font-size: 10px;
-}
-
 body {
-    font-family: 'Open Sans','sans-serif';
-    font-size: 2em;
-    color: #262626;
+    width: 100%;
+    margin: 0;
+    color: #333;
+    font-family: "IBM Plex Mono", monospace;
+    font-size: 18pt;
 }
 
-h1,
-h2,
-h3,
-h4 {
-    font-family: 'Roboto Slab','sans-serif';
-}
-
-h1 {
-    font-size: 4rem;
-}
-
-h2 {
-    font-size: 3rem;
-}
-
-blockquote {
-    display: inline-block;
-    padding: 0 2.5rem;
-    border-left: 2px solid #e26d1f;
-}
-
-nav li {
-    display: inline;
-    margin: 0 1rem 0 0;
-} 
-
-main li:before {
-    padding-right: 1rem;
-    content: '▶';
-    color: #e26d1f;
-}
-
-a {
-    color: #277acc;
-}
-
-/* Page layout */
-
-header,
-main,
-footer {
-    max-width: 80rem;
+main {
+    max-width: 50rem;
     margin: 0 auto;
     padding: 0 2rem;
 }
 
-/* Contact info */
-
-ul.contact-info {
-    max-width: 80rem;
+footer {
+    width: 100%;
+    overflow-y: auto;
+    background: #333;
+    color: white;
 }
 
-ul.contact-info li {
-    padding: 1rem 0;
-    border-bottom: 2px solid #e26d1f;
+p,
+li,
+input {
+    line-height: 1.75;
 }
 
-ul.contact-info li:before {
-    display: none;
+h1 {
+    line-height: 1.75;
+} h1 span {
+    border: 0 solid #333;
+    border-width: 5px;
+    background: #333;
+    color: white;
+    box-decoration-break: clone;
 }
 
-span.left {
-    font-weight: bold;
+.tech-list {
+    padding: 0;
 }
 
-span.right {
-    float: right;
+.tech-list li {
+    list-style: none;
+    display: inline;
 }
+
+.tech-logo {
+    width: 100px;
+    height: 100px;
+} .tech-logo--balanced {
+    width: 100px;
+    height: 100px;
+}
+
+form {
+    width: 100%;
+    margin: 1rem 0;
+}
+
+fieldset {
+    margin: 2rem auto;
+    padding: 0;
+    border: 0;
+}
+
+.c-input-field {
+    width: 100%;
+    margin: .5rem 0 2rem;
+    padding: .5rem;
+    font-family: inherit;
+    font-size: 100%;
+    background: #ddd;
+    border: 0;
+    border-left: 5px solid #333;
+    box-shadow: none;
+}
+
+button {
+    margin: inherit;
+    padding: .5rem 1rem;
+    font-family: inherit;
+    font-size: inherit;
+    border: 0;
+    background: #333;
+    color: #ddd;
+}
+
+.c-input-field--multiline {
+    width: 100%;
+    margin: .5rem 0 2rem;
+    padding: .5rem;
+    font-family: inherit;
+    font-size: 100%;
+    background: #ddd;
+    border: 0;
+    border-left: 5px solid #333;
+    resize: none;
+}
+
+.footer-text {
+    margin: 1rem 2rem;
+}
+
