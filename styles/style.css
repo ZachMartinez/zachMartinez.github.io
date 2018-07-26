@@ -38,9 +38,7 @@ h2 {
 blockquote {
     display: inline-block;
     padding: 0 2.5rem;
-    background: #262626;
-    color: white;
-    box-shadow: 0 10px 6px -6px #777;
+    border-left: 2px solid #e26d1f;
 }
 
 nav li {

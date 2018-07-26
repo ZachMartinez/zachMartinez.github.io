@@ -1,76 +1,102 @@
 <!DOCTYPE html>
 <html>
 <head>
-    <meta charset="utf-8">
-    <title>Zach's Web Portfolio</title>
-    <link rel="stylesheet" href="styles/style.css">
-    <link href="https://fonts.googleapis.com/css?family=Open+Sans|Roboto+Slab" rel="stylesheet">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <title>Zachary Martinez &mdash; Web Designer & Developer</title>
+    <link rel="stylesheet" href="style/style.css">
+    <link href="https://fonts.googleapis.com/css?family=IBM+Plex+Mono" rel="stylesheet">
+    <script type="text/javascript" src="js/script.js"></script>
 </head>
+
 <body>
     <header>
-        <div class="logo">
-            <h1>Zach Martinez | Web Developer</h1>
-        </div>    
-        <nav style="display: none;">
-            <ul>
-                <li><a href="#work">Work</a></li>
-                <li><a href="#blog">Blog</a></li>
-                <li><a href="#about">About</a></li>
-            </ul>
-        </nav>
+       
     </header>
+    
     <main>
-        <h2>About Me</h2>
+        <h1>
+            <span>Zach Martinez <br>
+            Web Designer and Developer</span>
+        </h1>
+        <section class="languages">
+            <h2>Languages</h2>
 
-        <blockquote>
-            <p>"Self realization... I was thinking of the immortal words of our
-            beloved Socrates when he said, 'I drank what?'" &mdash; Chris Knight, Optical Physicist</p>
-        </blockquote>
+            <ul class="tech-list">
+                <li><img class="tech-logo" src="img/HTML5 Logo.svg" alt="HTML Logo"></li>
+                <li><img class="tech-logo" src="img/CSS_logo.svg" alt="CSS Logo"></li>
+                <li><img class="tech-logo" src="img/Unofficial_JavaScript_logo_2.svg" alt="JavaScript Logo"></li>
+                <li><img class="tech-logo" src="img/Ruby_logo.svg" alt="Ruby Logo"></li>
+            </ul>
+        </section>
         
-        <p>I'm a self-taught web developer based in the San Francisco Bay Area.
-        I'm proficient in HTML and CSS. I also have a solid foundation in 
-        Javascript programming. I currently work in customer service, and I'm learning 
-        Hindi and bass guitar in my spare time.</p>
+        <section class="projects">
+            <h2>Projects</h2>
 
-        <h2>What I Use...</h2>
+            <p>
+                I have no client projects right now, but you can see what I'm 
+                currently tinkering with at the links below. 
+            </p>
 
-        <ul>
-            <li>HTML</li>
-            <li>CSS</li>
-            <li>Javascript</li>
-            <li>Git</li>
-        </ul>
+            <ul>
+                <li><a href="https://github.com/ZachMartinez">GitHub</a></li>
+                <li><a href="https://codepen.io/zachMartinez/">CodPen</a></li>
+            </ul>
+        </section>
+        
+        <section class="bio">
+            <h2>Bio</h2>
 
-        <h2>Things I have tried...</h2>
-        <ul>
-            <li>Blender</li>
-            <li>Node JS</li>
-            <li>Ruby on Rails</li>
-        </ul>
+            <p>
+                I'm a self-taught web designer and developer. My  goal is to create 
+                websites that communicate clearly and accessibly, while also looking 
+                cool. I also enjoy reading books that are way too smart for me, 
+                learning human languages, and playing bass guitar. 
+            </p>
+        </section>
 
-        <h2>Contact Me</h2>
+        <section class="contact">
+            <h2>Contact</h2>
 
-        <ul class="contact-info">
-            <li>
-                <span class="left">Email</span>
-                <span class="line"></span>
-                <span class="right">
-                    <a href="mailto:martinez.zach.m@gmail.com">
-                        martinez.zach.m@gmail.com
-                    </a>
-                </span>
-            </li>
-            <li>
-                <span class="left">Phone</span>
-                <span class="line"></span>
-                <span class="right">
-                    <a href="tel:650-294-8554">650-294-8554</a>
-                </span>
-            </li>
-        </ul>
+            <form class="boilerform" action="https://formspree.io/martinez.zach.m@gmail.com" method="post">
+                <fieldset class="c-form">
+                    <div class="c-form__row">
+                        <label for="name" class="c-label">Name</label>
+                        <input  
+                        type="text" 
+                        name="name" 
+                        id="name" 
+                        class="c-input-field" 
+                        value="" 
+                        autocorrect="off" 
+                        placeholder="William Knickers" 
+                        required />
+                    </div>
+                    <div class="c-form__row">
+                        <label for="email" class="c-label">Email</label>
+                        <input 
+                        type="email" 
+                        name="email" 
+                        id="email" 
+                        autocapitalize="none" 
+                        autocorrect="off" 
+                        class="c-input-field" 
+                        placeholder="billk@python.com" 
+                        required />
+                    </div>
+                    <div class="c-form__row">
+                        <label for="message" class="c-label">Talk to me</label>
+                        <textarea name="message" id="message" class="c-input-field c-input-field--multiline" rows="10" placeholder="Dear Sir, I wish to complain in the strongest possible terms..."></textarea>
+                    </div>
+                    <div class="c-form__row">
+                        <button class="c-button" type="submit">Submit</button>    
+                    </div>
+                </fieldset>
+            </form>
+        </section>
     </main>
-    <footer>
 
+    <footer>
+        <p class="footer-text">&copy; 2018 &mdash; Zachary Martinez </p>
     </footer>
 </body>
 </html>
