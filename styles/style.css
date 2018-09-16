@@ -36,8 +36,9 @@ input {
     word-spacing: -10px;
     line-height: 1.75;
     box-shadow: 10px 0 0 #333, -10px 0 0 #333;
+    box-decoration-break: clone;
+    -webkit-box-decoration-break: clone;
 }
-
 
 .tech-list {
     padding: 0;
@@ -101,4 +102,3 @@ button {
 .footer-text {
     margin: 1rem 2rem;
 }
-
