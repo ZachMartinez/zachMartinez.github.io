@@ -11,6 +11,7 @@ body {
 }
 
 main {
+    display: block;
     max-width: 50rem;
     margin: 0 auto;
     padding: 0 2rem;
@@ -35,7 +36,7 @@ input {
     color: white;
     word-spacing: -10px;
     line-height: 1.75;
-    box-shadow: 10px 0 0 #333, -10px 0 0 #333;
+    box-shadow: 1rem 0 0 #333, -1rem 0 0 #333;
     box-decoration-break: clone;
     -webkit-box-decoration-break: clone;
 }
