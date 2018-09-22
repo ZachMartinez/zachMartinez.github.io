@@ -2,6 +2,12 @@
     box-sizing: border-box;
 }
 
+html,
+body {
+    height: 100%;
+    margin: 0;
+}
+
 body {
     width: 100%;
     margin: 0;
@@ -13,8 +19,11 @@ body {
 main {
     display: block;
     max-width: 50rem;
+    min-height: 100%;
     margin: 0 auto;
     padding: 0 2rem;
+    padding-bottom: 5rem;
+    overflow-y: auto;
 }
 
 footer {
@@ -25,6 +34,7 @@ footer {
 }
 
 p,
+a,
 li,
 input {
     line-height: 1.75;
@@ -78,14 +88,15 @@ fieldset {
     box-shadow: none;
 }
 
-button {
+button, .padded-button {
     margin: inherit;
     padding: .5rem 1rem;
     font-family: inherit;
     font-size: inherit;
+    text-decoration: none;
     border: 0;
     background: #333;
-    color: #ddd;
+    color: white;
 }
 
 .c-input-field--multiline {
@@ -100,6 +111,13 @@ button {
     resize: none;
 }
 
+footer {
+    height: 5rem;
+    margin: 0;
+    margin-top: -5rem;
+}
+
 .footer-text {
-    margin: 1rem 2rem;
+    margin: 0 2rem;
+    line-height: 5rem;
 }

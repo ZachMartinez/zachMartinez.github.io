@@ -60,6 +60,7 @@
                 <fieldset class="c-form">
                     <div class="c-form__row">
                         <label for="name" class="c-label">Name</label>
+                        <input type="text" name="_gotcha" style="display:none" />
                         <input  
                         type="text" 
                         name="name" 
@@ -87,7 +88,8 @@
                         <textarea name="message" id="message" class="c-input-field c-input-field--multiline" rows="10" placeholder="Dear Sir, I wish to complain in the strongest possible terms..."></textarea>
                     </div>
                     <div class="c-form__row">
-                        <button class="c-button" type="submit">Submit</button>    
+                        <button class="c-button" type="submit">Submit</button> 
+                        <input type="hidden" name="_next" value="thanks.html" />   
                     </div>
                 </fieldset>
             </form>
